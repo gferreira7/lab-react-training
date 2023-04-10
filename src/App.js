@@ -19,7 +19,7 @@ import RGBColorPicker from './components/RGBColorPicker';
 function App() {
   return (
     <div className="App">
-      <div>ID Cards</div>
+      <div className='fs-1 m-4'>ID Cards</div>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -36,16 +36,16 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-      <div>Greetings</div>
+      <div className='fs-1 m-4'>Greetings</div>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-      <div>Random</div>
+      <div className='fs-1 m-4'>Random</div>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-      <div>Random</div>
+      <div className='fs-1 m-4'>Random</div>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-      <div>Credit Card</div>
+      <div className='fs-1 m-4'>Credit Card</div>
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -76,7 +76,7 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
-      <div>Rating</div>
+      <div className='fs-1 m-4'>Rating</div>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -84,7 +84,7 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
-      <div>Driver Card</div>
+      <div className='fs-1 m-4'>Driver Card</div>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -104,14 +104,15 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <div className='fs-1 m-4'>Like Button</div>
       <LikeButton />
 
-      <div>ClickablePicture</div>
+      <div className='fs-1 m-4'>ClickablePicture</div>
       <ClickablePicture img="maxence.png" imgClicked="maxence-glasses.png" />
 
-      <div>Dice Roll</div>
+      <div className='fs-1 m-4'>Dice Roll</div>
       <Dice />
-      <div>Carousel</div>
+      <div className='fs-1 m-4'>Carousel</div>
       <Carousel
         images={[
           'https://randomuser.me/api/portraits/women/1.jpg',
@@ -121,16 +122,16 @@ function App() {
         ]}
       />
 
-      <div>NumbersTable</div>
+      <div className='fs-1 m-4'>NumbersTable</div>
       <NumbersTable limit={12} />
 
-      <div>FaceBook</div>
+      <div className='fs-1 m-4'>FaceBook</div>
       <FaceBook />
 
-      <div>SignUp Page</div>
+      <div className='fs-1 m-4'>SignUp Page</div>
       <SignUp />
 
-      <div>RGB Color Picker</div>
+      <div className='fs-1 m-4'>RGB Color Picker</div>
       <RGBColorPicker />
     </div>
   );

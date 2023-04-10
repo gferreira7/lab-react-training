@@ -8,7 +8,7 @@ function Rating(props){
     const fillStarPath = "./filled_star.png"
 
     return (
-        <div className="d-flex justify-content-center align-items-center w-50 p-2 mb-2">
+        <div className="d-flex justify-content-center align-items-center w-25 p-2 mb-2">
 
             { roundNumber >= 1 ? <img className="w-25" src={fillStarPath}/> : <img className="w-25" src={emptyStarPath}/> }
             { roundNumber >= 2 ? <img className="w-25" src={fillStarPath}/> : <img className="w-25" src={emptyStarPath}/> }
